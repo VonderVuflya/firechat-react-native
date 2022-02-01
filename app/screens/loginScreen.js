@@ -12,7 +12,10 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: '#151718',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+  googleButton: { width: 225, height: 60 },
 })
 
 const LoginScreen = () => {
@@ -35,7 +38,7 @@ const LoginScreen = () => {
   return (
     <View style={styles.container}>
       <GoogleSigninButton
-        // style={styles.googleButton}
+        style={styles.googleButton}
         size={GoogleSigninButton.Size.Wide}
         color={GoogleSigninButton.Color.Dark}
         onPress={handleLogin}
